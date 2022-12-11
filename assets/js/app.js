@@ -128,7 +128,6 @@ $(document).ready(function () {
 
     });
 
-
 });
 
 function changeFontSize(element, sizeValue) {

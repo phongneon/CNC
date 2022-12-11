@@ -58,15 +58,15 @@ $(document).ready(function () {
                 $(`<div class='d-inline-block mr-4 child ${i}'> ${text} 
                         <div class="show-color bg-white border-round d-none p-2">
                             <div class="color-wrapper d-flex justify-content-between">
-                                <button data-color="shadow-white" class="item-color bg-shadow-white"></button>
-                                <button data-color="shadow-orange" class="item-color bg-shadow-orange"></button>
-                                <button data-color="shadow-yellow" class="item-color bg-shadow-yellow"></button>
-                                <button data-color="shadow-mint" class="item-color bg-shadow-mint"></button>
-                                <button data-color="shadow-green" class="item-color bg-shadow-green"></button>
-                                <button data-color="shadow-deep-blue" class="item-color bg-shadow-deep-blue"></button>
-                                <button data-color="shadow-purple" class="item-color bg-shadow-purple"></button>
-                                <button data-color="shadow-pink" class="item-color bg-shadow-pink"></button>
-                                <button data-color="shadow-red" class="item-color bg-shadow-red"></button>
+                                <button data-color="shadow-white" class="btn item-color bg-shadow-white"></button>
+                                <button data-color="shadow-orange" class="btn item-color bg-shadow-orange"></button>
+                                <button data-color="shadow-yellow" class="btn item-color bg-shadow-yellow"></button>
+                                <button data-color="shadow-mint" class="btn item-color bg-shadow-mint"></button>
+                                <button data-color="shadow-green" class="btn item-color bg-shadow-green"></button>
+                                <button data-color="shadow-deep-blue" class="btn item-color bg-shadow-deep-blue"></button>
+                                <button data-color="shadow-purple" class="btn item-color bg-shadow-purple"></button>
+                                <button data-color="shadow-pink" class="btn item-color bg-shadow-pink"></button>
+                                <button data-color="shadow-red" class="btn item-color bg-shadow-red"></button>
                             </div> 
                         </div>
                     </div>`).appendTo(textShow);

@@ -109,6 +109,8 @@ body {
     margin-right: 5px;
     margin-bottom: 5px;
     flex-shrink: 0;
+    border: 1px solid black;
+    padding: 0;
 }
 
 .image-preview {

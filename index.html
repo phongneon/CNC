@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNC</title>
+
+    <!-- START FONTS FAMILY -->
+    <link as='font' crossorigin='anonymous' href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/Alexa.ttf'
+        rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous' href='https://cdn.jsdelivr.net/gh/designeroren/neon/Clip.ttf' rel='preload'
+        type='font/ttf' />
+    <link as='font' crossorigin='anonymous' href='https://cdn.jsdelivr.net/gh/designeroren/neon/Bellview.ttf'
+        rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous' href='https://cdn.jsdelivr.net/gh/designeroren/neon/Chicago.ttf'
+        rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous' href='https://cdn.jsdelivr.net/gh/designeroren/neon/Codystar-Regular.ttf'
+        rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous' href='https://cdn.jsdelivr.net/gh/designeroren/neon/Cotton.ttf'
+        rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous' href='https://cdn.jsdelivr.net/gh/designeroren/neon/Daisy.ttf' rel='preload'
+        type='font/ttf' />
+    <link as='font' crossorigin='anonymous' href='https://cdn.jsdelivr.net/gh/designeroren/neon/Garden.ttf'
+        rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous' href='https://cdn.jsdelivr.net/gh/designeroren/neon/Keith.ttf' rel='preload'
+        type='font/ttf' />
+    <link as='font' crossorigin='anonymous' href='https://cdn.jsdelivr.net/gh/designeroren/neon/Springfield.ttf'
+        rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous' href='https://cdn.jsdelivr.net/gh/designeroren/neon/LoveL.otf' rel='preload'
+        type='font/ttf' />
+    <link as='font' crossorigin='anonymous' href='https://cdn.jsdelivr.net/gh/designeroren/neon/Photogenic.ttf'
+        rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous' href='https://cdn.jsdelivr.net/gh/designeroren/neon/Sacramento-Regular.ttf'
+        rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous' href='https://cdn.jsdelivr.net/gh/designeroren/neon/Selfie.ttf'
+        rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous' href='https://cdn.jsdelivr.net/gh/designeroren/neon/soulja.ttf'
+        rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous' href='https://cdn.jsdelivr.net/gh/designeroren/neon/Venetian.ttf'
+        rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/Amanda.ttf' rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/Amsterdam.ttf' rel='preload'
+        type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/Austin.ttf' rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/Avante.ttf' rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/Barcelona.ttf' rel='preload'
+        type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/Bayview.ttf' rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/Beachfront.ttf' rel='preload'
+        type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/Buttercup.ttf' rel='preload'
+        type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/Chelsea.ttf' rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/ClassicType.ttf' rel='preload'
+        type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/Freehand.ttf' rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/Freespirit.ttf' rel='preload'
+        type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/Greenworld.ttf' rel='preload'
+        type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/LoveNeon.ttf' rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/LoveNote.ttf' rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/Marquee.ttf' rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/Mayfair.ttf' rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/Melbourne.ttf' rel='preload'
+        type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/Monaco.ttf' rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/NeoTokyo.ttf' rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/NeonGlow.ttf' rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/NeonLite.ttf' rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/Neonscript.ttf' rel='preload'
+        type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/Neontrace.ttf' rel='preload'
+        type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/Nevada.ttf' rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/NewCursive.ttf' rel='preload'
+        type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/Northshore.ttf' rel='preload'
+        type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/Rocket.ttf' rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/Royalty.ttf' rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous' href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/SciFi.ttf'
+        rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/Signature.ttf' rel='preload'
+        type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/Typewriter.ttf' rel='preload'
+        type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/Vintage.ttf' rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/Waikiki.ttf' rel='preload' type='font/ttf' />
+    <link as='font' crossorigin='anonymous'
+        href='https://cdn.jsdelivr.net/gh/minhkhoi2001/2021/ledneon/fonts/WildScript.ttf' rel='preload'
+        type='font/ttf' />
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700' rel='stylesheet' />
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' />
+
+    <!-- END FONTS FAMILY -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+
+</head>
+
+<body>
+
+    <div class="main py-md-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 my-4">
+                    <h1 class="text-center Melbourne">Phong Neon - Đèn Led Neon Theo Yêu Cầu</h1>
+                </div>
+                <div class="col-md-12 col-lg-8">
+                    <div class="left-content">
+                        <div class="show-result">
+                            <p class="note-color">Click vào từng chữ để đổi màu và di chuyển vị trí của nó</p>
+                            <div class="image-preview"></div>
+                            <h1 class="text-show shadow-pink"> Led Neon Sign
+                            </h1>
+                        </div>
+                        <!-- <div class="suggestions">
+                            <p class="my-3">Gợi ý màu chữ:</p>
+                            <div class="suggestion-wrapper">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <h1 class="text-suggestion">
+                                            <span>Led</span>
+                                            <span>Neon</span>
+                                            <span>Sign</span>
+                                        </h1>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> -->
+                        <p class="note-left-content">
+                            * Chọn được font và màu, chụp màn hình nhắn tin shop. (Lưu ý, vì font chữ nước ngoài nên gõ
+                            tên
+                            không dấu để không bị lỗi font)
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4 px-0">
+                    <div class="setting right-content">
+                        <ul class="nav nav-tabs nav-config" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                    aria-controls="home" aria-selected="true">Chữ Neon</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                    aria-controls="profile" aria-selected="false">Font Chữ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                    aria-controls="contact" aria-selected="false">Màu Sắc</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content tab-content-config" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <textarea id="text-area" name="text-enter"
+                                    placeholder="Nhập chữ tại đây (Viết không dấu)" cols="30"
+                                    rows="3"></textarea>
+                                <button class="btn btn-primary mb-4 w-100 btn-approved">Đồng Ý</button>
+                                <p class="mb-1"> Thêm ảnh: </p>
+                                <div class="custom-file my-1">
+                                    <input type="file" class="custom-file-input" name="photograph" id="photo"
+                                        required="true" />
+                                    <label class="custom-file-label" for="customFile">Choose file</label>
+                                </div>
+                                <p class="text-danger mb-4">*Chỉ tải ảnh có định dạng: gif, png, jpg, jpeg, svg và nền
+                                    trong</p>
+                            </div>
+                            <div class="tab-pane fade tab-pick-font" id="profile" role="tabpanel"
+                                aria-labelledby="profile-tab">
+                                <p class="text-center">Chọn Font</p>
+                                <ul class="row list-unstyled">
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Alexa" data-size="160"
+                                            data-value="Alexa">
+                                            <span class="Alexa" style="font-size: 23px;">Alexa</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Clip" data-size="160"
+                                            data-value="Clip">
+                                            <span class="Clip" style="font-size: 160%">Clip</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Cotton" data-size="160"
+                                            data-value="Cotton">
+                                            <span class="Cotton" style="font-size: 160%">Cotton</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Daisy" data-size="160"
+                                            data-value="Daisy">
+                                            <span class="Daisy" style="font-size: 160%">Daisy</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Garden" data-size="160"
+                                            data-value="Garden">
+                                            <span class="Garden" style="font-size: 160%">Garden</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Photogenic" data-size="160"
+                                            data-value="Photogenic">
+                                            <span class="Photogenic" style="font-size: 160%">Photogenic</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Sacramento-Regular"
+                                            data-size="160" data-value="Sacramento-Regular">
+                                            <span class="Sacramento-Regular" style="font-size: 160%">Sacramento</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Selfie" data-size="160"
+                                            data-value="Selfie">
+                                            <span class="Selfie" style="font-size: 160%">Selfie</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Venetian" data-size="160"
+                                            data-value="Venetian">
+                                            <span class="Venetian" style="font-size: 160%">Venetian</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="soulja" data-size="160"
+                                            data-value="soulja">
+                                            <span class="soulja" style="font-size: 160%">soulja</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Keith" data-size="160"
+                                            data-value="Keith">
+                                            <span class="Keith" style="font-size: 160%">Keith</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Springfield" data-size="160"
+                                            data-value="Springfield">
+                                            <span class="Springfield" style="font-size: 160%">Springfield</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="LoveL" data-size="160"
+                                            data-value="LoveL">
+                                            <span class="LoveL" style="font-size: 160%">LoveL</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Amanda" data-size="150"
+                                            data-value="Amanda">
+                                            <span class="Amanda" style="font-size: 150%">Amanda</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Amsterdam" data-size="140"
+                                            data-value="Amsterdam">
+                                            <span class="Amsterdam" style="font-size: 140%">Amsterdam</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Austin" data-size="220"
+                                            data-value="Austin">
+                                            <span class="Austin" style="font-size: 220%">Austin</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Avante" data-size="120"
+                                            data-value="Avante">
+                                            <span class="Avante" style="font-size: 120%">Avante</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Barcelona" data-size="130"
+                                            data-value="Barcelona">
+                                            <span class="Barcelona" style="font-size: 130%">Barcelona</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font current" data-name="Bayview" data-size="200"
+                                            data-value="Bayview">
+                                            <span class="Bayview" style="font-size: 200%">Bayview</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Beachfront" data-size="130"
+                                            data-value="Beachfront">
+                                            <span class="Beachfront" style="font-size: 130%">Beachfront</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Buttercup" data-size="190"
+                                            data-value="Buttercup">
+                                            <span class="Buttercup" style="font-size: 190%">Buttercup</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Chelsea" data-size="200"
+                                            data-value="Chelsea">
+                                            <span class="Chelsea" style="font-size: 200%">Chelsea</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="ClassicType" data-size="100"
+                                            data-value="ClassicType">
+                                            <span class="ClassicType" style="font-size: 100%">ClassicType</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Freehand" data-size="160"
+                                            data-value="Freehand">
+                                            <span class="Freehand" style="font-size: 160%">Freehand</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Freespirit" data-size="85"
+                                            data-value="Freespirit">
+                                            <span class="Freespirit" style="font-size: 85%">Freespirit</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="LoveNeon" data-size="100"
+                                            data-value="LoveNeon">
+                                            <span class="LoveNeon" style="font-size: 100%">LoveNeon</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="LoveNote" data-size="155"
+                                            data-value="LoveNote">
+                                            <span class="LoveNote" style="font-size: 155%">LoveNote</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Marquee" data-size="140"
+                                            data-value="Marquee">
+                                            <span class="Marquee" style="font-size: 140%">Marquee</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Mayfair" data-size="160"
+                                            data-value="Mayfair">
+                                            <span class="Mayfair" style="font-size: 160%">Mayfair</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Melbourne" data-size="110"
+                                            data-value="Melbourne">
+                                            <span class="Melbourne" style="font-size: 110%">Melbourne</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="NeoTokyo" data-size="120"
+                                            data-value="NeoTokyo">
+                                            <span class="NeoTokyo" style="font-size: 120%">NeoTokyo</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="NeonGlow" data-size="100"
+                                            data-value="NeonGlow">
+                                            <span class="NeonGlow" style="font-size: 100%">NeonGlow</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="NeonLite" data-size="100"
+                                            data-value="NeonLite">
+                                            <span class="NeonLite" style="font-size: 100%">NeonLite</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Neonscript" data-size="170"
+                                            data-value="Neonscript">
+                                            <span class="Neonscript" style="font-size: 170%">Neonscript</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Nevada" data-size="180"
+                                            data-value="Nevada">
+                                            <span class="Nevada" style="font-size: 180%">Nevada</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="NewCursive" data-size="160"
+                                            data-value="NewCursive">
+                                            <span class="NewCursive" style="font-size: 160%">NewCursive</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Northshore" data-size="150"
+                                            data-value="Northshore">
+                                            <span class="Northshore" style="font-size: 150%">Northshore</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Rocket" data-size="110"
+                                            data-value="Rocket">
+                                            <span class="Rocket" style="font-size: 110%">Rocket</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Royalty" data-size="140"
+                                            data-value="Royalty">
+                                            <span class="Royalty" style="font-size: 140%">Royalty</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="SciFi" data-size="130"
+                                            data-value="SciFi">
+                                            <span class="SciFi" style="font-size: 130%">SciFi</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Signature" data-size="180"
+                                            data-value="Signature">
+                                            <span class="Signature" style="font-size: 180%">Signature</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Vintage" data-size="130"
+                                            data-value="Vintage">
+                                            <span class="Vintage" style="font-size: 130%">Vintage</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="Waikiki" data-size="120"
+                                            data-value="Waikiki">
+                                            <span class="Waikiki" style="font-size: 120%">Waikiki</span>
+                                        </a>
+                                    </li>
+                                    <li class="col-3">
+                                        <a class="font-action js-click-font " data-name="WildScript" data-size="180"
+                                            data-value="WildScript">
+                                            <span class="WildScript" style="font-size: 180%">WildScript</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade tab-pick-color" id="contact" role="tabpanel"
+                                aria-labelledby="contact-tab">
+                                <p class="text-center">Chọn màu sắc</p>
+                                <ul class="row list-unstyled">
+                                    <li class="col-2" data-image="white.jpg">
+                                        <p class="btn-action js-click-color  white" data-cname="Trắng"
+                                            data-color="#white" data-name="white" data-value="#ddd">
+                                            <svg class="svg-inline--fa fa-lightbulb fa-w-11" style="color: #ddd;"
+                                                aria-hidden="true" focusable="false" data-prefix="far"
+                                                data-icon="lightbulb" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 352 512" data-fa-i2svg="">
+                                                <path fill="currentColor"
+                                                    d="M176 80c-52.94 0-96 43.06-96 96 0 8.84 7.16 16 16 16s16-7.16 16-16c0-35.3 28.72-64 64-64 8.84 0 16-7.16 16-16s-7.16-16-16-16zM96.06 459.17c0 3.15.93 6.22 2.68 8.84l24.51 36.84c2.97 4.46 7.97 7.14 13.32 7.14h78.85c5.36 0 10.36-2.68 13.32-7.14l24.51-36.84c1.74-2.62 2.67-5.7 2.68-8.84l.05-43.18H96.02l.04 43.18zM176 0C73.72 0 0 82.97 0 176c0 44.37 16.45 84.85 43.56 115.78 16.64 18.99 42.74 58.8 52.42 92.16v.06h48v-.12c-.01-4.77-.72-9.51-2.15-14.07-5.59-17.81-22.82-64.77-62.17-109.67-20.54-23.43-31.52-53.15-31.61-84.14-.2-73.64 59.67-128 127.95-128 70.58 0 128 57.42 128 128 0 30.97-11.24 60.85-31.65 84.14-39.11 44.61-56.42 91.47-62.1 109.46a47.507 47.507 0 0 0-2.22 14.3v.1h48v-.05c9.68-33.37 35.78-73.18 52.42-92.16C335.55 260.85 352 220.37 352 176 352 78.8 273.2 0 176 0z">
+                                                </path>
+                                            </svg><!-- <i class="far fa-lightbulb" style="color: #ddd"></i> -->
+                                            <span>
+                                                Trắng
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="col-2" data-image="yellow.jpg">
+                                        <p class="btn-action js-click-color  yellow" data-cname="Vàng"
+                                            data-color="#yellow" data-name="yellow" data-value="#eddf65">
+                                            <svg class="svg-inline--fa fa-lightbulb fa-w-11" style="color: #eddf65;"
+                                                aria-hidden="true" focusable="false" data-prefix="far"
+                                                data-icon="lightbulb" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 352 512" data-fa-i2svg="">
+                                                <path fill="currentColor"
+                                                    d="M176 80c-52.94 0-96 43.06-96 96 0 8.84 7.16 16 16 16s16-7.16 16-16c0-35.3 28.72-64 64-64 8.84 0 16-7.16 16-16s-7.16-16-16-16zM96.06 459.17c0 3.15.93 6.22 2.68 8.84l24.51 36.84c2.97 4.46 7.97 7.14 13.32 7.14h78.85c5.36 0 10.36-2.68 13.32-7.14l24.51-36.84c1.74-2.62 2.67-5.7 2.68-8.84l.05-43.18H96.02l.04 43.18zM176 0C73.72 0 0 82.97 0 176c0 44.37 16.45 84.85 43.56 115.78 16.64 18.99 42.74 58.8 52.42 92.16v.06h48v-.12c-.01-4.77-.72-9.51-2.15-14.07-5.59-17.81-22.82-64.77-62.17-109.67-20.54-23.43-31.52-53.15-31.61-84.14-.2-73.64 59.67-128 127.95-128 70.58 0 128 57.42 128 128 0 30.97-11.24 60.85-31.65 84.14-39.11 44.61-56.42 91.47-62.1 109.46a47.507 47.507 0 0 0-2.22 14.3v.1h48v-.05c9.68-33.37 35.78-73.18 52.42-92.16C335.55 260.85 352 220.37 352 176 352 78.8 273.2 0 176 0z">
+                                                </path>
+                                            </svg><!-- <i class="far fa-lightbulb" style="color: #eddf65"></i> -->
+                                            <span>
+                                                Vàng
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="col-2" data-image="orange.jpg">
+                                        <p class="btn-action js-click-color  orange" data-cname="Cam"
+                                            data-color="#orange" data-name="orange" data-value="#ff8d02">
+                                            <svg class="svg-inline--fa fa-lightbulb fa-w-11" style="color: #ff8d02;"
+                                                aria-hidden="true" focusable="false" data-prefix="far"
+                                                data-icon="lightbulb" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 352 512" data-fa-i2svg="">
+                                                <path fill="currentColor"
+                                                    d="M176 80c-52.94 0-96 43.06-96 96 0 8.84 7.16 16 16 16s16-7.16 16-16c0-35.3 28.72-64 64-64 8.84 0 16-7.16 16-16s-7.16-16-16-16zM96.06 459.17c0 3.15.93 6.22 2.68 8.84l24.51 36.84c2.97 4.46 7.97 7.14 13.32 7.14h78.85c5.36 0 10.36-2.68 13.32-7.14l24.51-36.84c1.74-2.62 2.67-5.7 2.68-8.84l.05-43.18H96.02l.04 43.18zM176 0C73.72 0 0 82.97 0 176c0 44.37 16.45 84.85 43.56 115.78 16.64 18.99 42.74 58.8 52.42 92.16v.06h48v-.12c-.01-4.77-.72-9.51-2.15-14.07-5.59-17.81-22.82-64.77-62.17-109.67-20.54-23.43-31.52-53.15-31.61-84.14-.2-73.64 59.67-128 127.95-128 70.58 0 128 57.42 128 128 0 30.97-11.24 60.85-31.65 84.14-39.11 44.61-56.42 91.47-62.1 109.46a47.507 47.507 0 0 0-2.22 14.3v.1h48v-.05c9.68-33.37 35.78-73.18 52.42-92.16C335.55 260.85 352 220.37 352 176 352 78.8 273.2 0 176 0z">
+                                                </path>
+                                            </svg><!-- <i class="far fa-lightbulb" style="color: #ff8d02"></i> -->
+                                            <span>
+                                                Cam
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="col-2" data-image="mint.jpg">
+                                        <p class="btn-action js-click-color  mint" data-cname="Xanh ngọc"
+                                            data-color="#mint" data-name="mint" data-value="#80ffd9">
+                                            <svg class="svg-inline--fa fa-lightbulb fa-w-11" style="color: #80ffd9;"
+                                                aria-hidden="true" focusable="false" data-prefix="far"
+                                                data-icon="lightbulb" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 352 512" data-fa-i2svg="">
+                                                <path fill="currentColor"
+                                                    d="M176 80c-52.94 0-96 43.06-96 96 0 8.84 7.16 16 16 16s16-7.16 16-16c0-35.3 28.72-64 64-64 8.84 0 16-7.16 16-16s-7.16-16-16-16zM96.06 459.17c0 3.15.93 6.22 2.68 8.84l24.51 36.84c2.97 4.46 7.97 7.14 13.32 7.14h78.85c5.36 0 10.36-2.68 13.32-7.14l24.51-36.84c1.74-2.62 2.67-5.7 2.68-8.84l.05-43.18H96.02l.04 43.18zM176 0C73.72 0 0 82.97 0 176c0 44.37 16.45 84.85 43.56 115.78 16.64 18.99 42.74 58.8 52.42 92.16v.06h48v-.12c-.01-4.77-.72-9.51-2.15-14.07-5.59-17.81-22.82-64.77-62.17-109.67-20.54-23.43-31.52-53.15-31.61-84.14-.2-73.64 59.67-128 127.95-128 70.58 0 128 57.42 128 128 0 30.97-11.24 60.85-31.65 84.14-39.11 44.61-56.42 91.47-62.1 109.46a47.507 47.507 0 0 0-2.22 14.3v.1h48v-.05c9.68-33.37 35.78-73.18 52.42-92.16C335.55 260.85 352 220.37 352 176 352 78.8 273.2 0 176 0z">
+                                                </path>
+                                            </svg><!-- <i class="far fa-lightbulb" style="color: #80ffd9"></i> -->
+                                            <span>
+                                                Xanh ngọc
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="col-2" data-image="green.jpg">
+                                        <p class="btn-action js-click-color  green" data-cname="Xanh chuối"
+                                            data-color="#green" data-name="green" data-value="#85ffaa">
+                                            <svg class="svg-inline--fa fa-lightbulb fa-w-11" style="color: #85ffaa;"
+                                                aria-hidden="true" focusable="false" data-prefix="far"
+                                                data-icon="lightbulb" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 352 512" data-fa-i2svg="">
+                                                <path fill="currentColor"
+                                                    d="M176 80c-52.94 0-96 43.06-96 96 0 8.84 7.16 16 16 16s16-7.16 16-16c0-35.3 28.72-64 64-64 8.84 0 16-7.16 16-16s-7.16-16-16-16zM96.06 459.17c0 3.15.93 6.22 2.68 8.84l24.51 36.84c2.97 4.46 7.97 7.14 13.32 7.14h78.85c5.36 0 10.36-2.68 13.32-7.14l24.51-36.84c1.74-2.62 2.67-5.7 2.68-8.84l.05-43.18H96.02l.04 43.18zM176 0C73.72 0 0 82.97 0 176c0 44.37 16.45 84.85 43.56 115.78 16.64 18.99 42.74 58.8 52.42 92.16v.06h48v-.12c-.01-4.77-.72-9.51-2.15-14.07-5.59-17.81-22.82-64.77-62.17-109.67-20.54-23.43-31.52-53.15-31.61-84.14-.2-73.64 59.67-128 127.95-128 70.58 0 128 57.42 128 128 0 30.97-11.24 60.85-31.65 84.14-39.11 44.61-56.42 91.47-62.1 109.46a47.507 47.507 0 0 0-2.22 14.3v.1h48v-.05c9.68-33.37 35.78-73.18 52.42-92.16C335.55 260.85 352 220.37 352 176 352 78.8 273.2 0 176 0z">
+                                                </path>
+                                            </svg><!-- <i class="far fa-lightbulb" style="color: #85ffaa"></i> -->
+                                            <span>
+                                                Xanh chuối
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="col-2" data-image="deep-blue.jpg">
+                                        <p class="btn-action js-click-color  deep-blue" data-cname="Xanh dương"
+                                            data-color="#deep-blue" data-name="deep-blue" data-value="#0274fc">
+                                            <svg class="svg-inline--fa fa-lightbulb fa-w-11" style="color: #0274fc;"
+                                                aria-hidden="true" focusable="false" data-prefix="far"
+                                                data-icon="lightbulb" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 352 512" data-fa-i2svg="">
+                                                <path fill="currentColor"
+                                                    d="M176 80c-52.94 0-96 43.06-96 96 0 8.84 7.16 16 16 16s16-7.16 16-16c0-35.3 28.72-64 64-64 8.84 0 16-7.16 16-16s-7.16-16-16-16zM96.06 459.17c0 3.15.93 6.22 2.68 8.84l24.51 36.84c2.97 4.46 7.97 7.14 13.32 7.14h78.85c5.36 0 10.36-2.68 13.32-7.14l24.51-36.84c1.74-2.62 2.67-5.7 2.68-8.84l.05-43.18H96.02l.04 43.18zM176 0C73.72 0 0 82.97 0 176c0 44.37 16.45 84.85 43.56 115.78 16.64 18.99 42.74 58.8 52.42 92.16v.06h48v-.12c-.01-4.77-.72-9.51-2.15-14.07-5.59-17.81-22.82-64.77-62.17-109.67-20.54-23.43-31.52-53.15-31.61-84.14-.2-73.64 59.67-128 127.95-128 70.58 0 128 57.42 128 128 0 30.97-11.24 60.85-31.65 84.14-39.11 44.61-56.42 91.47-62.1 109.46a47.507 47.507 0 0 0-2.22 14.3v.1h48v-.05c9.68-33.37 35.78-73.18 52.42-92.16C335.55 260.85 352 220.37 352 176 352 78.8 273.2 0 176 0z">
+                                                </path>
+                                            </svg><!-- <i class="far fa-lightbulb" style="color: #0274fc"></i> -->
+                                            <span>
+                                                Xanh dương
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="col-2" data-image="purple.jpg">
+                                        <p class="btn-action js-click-color  purple" data-cname="Tím"
+                                            data-color="#purple" data-name="purple" data-value="#cd65ed">
+                                            <svg class="svg-inline--fa fa-lightbulb fa-w-11" style="color: #cd65ed;"
+                                                aria-hidden="true" focusable="false" data-prefix="far"
+                                                data-icon="lightbulb" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 352 512" data-fa-i2svg="">
+                                                <path fill="currentColor"
+                                                    d="M176 80c-52.94 0-96 43.06-96 96 0 8.84 7.16 16 16 16s16-7.16 16-16c0-35.3 28.72-64 64-64 8.84 0 16-7.16 16-16s-7.16-16-16-16zM96.06 459.17c0 3.15.93 6.22 2.68 8.84l24.51 36.84c2.97 4.46 7.97 7.14 13.32 7.14h78.85c5.36 0 10.36-2.68 13.32-7.14l24.51-36.84c1.74-2.62 2.67-5.7 2.68-8.84l.05-43.18H96.02l.04 43.18zM176 0C73.72 0 0 82.97 0 176c0 44.37 16.45 84.85 43.56 115.78 16.64 18.99 42.74 58.8 52.42 92.16v.06h48v-.12c-.01-4.77-.72-9.51-2.15-14.07-5.59-17.81-22.82-64.77-62.17-109.67-20.54-23.43-31.52-53.15-31.61-84.14-.2-73.64 59.67-128 127.95-128 70.58 0 128 57.42 128 128 0 30.97-11.24 60.85-31.65 84.14-39.11 44.61-56.42 91.47-62.1 109.46a47.507 47.507 0 0 0-2.22 14.3v.1h48v-.05c9.68-33.37 35.78-73.18 52.42-92.16C335.55 260.85 352 220.37 352 176 352 78.8 273.2 0 176 0z">
+                                                </path>
+                                            </svg><!-- <i class="far fa-lightbulb" style="color: #cd65ed"></i> -->
+                                            <span>
+                                                Tím
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="col-2" data-image="pink.jpg">
+                                        <p class="btn-action js-click-color  pink current" data-cname="Hồng"
+                                            data-color="#pink" data-name="pink" data-value="#ff90ff">
+                                            <svg class="svg-inline--fa fa-lightbulb fa-w-11" style="color: #ff90ff;"
+                                                aria-hidden="true" focusable="false" data-prefix="far"
+                                                data-icon="lightbulb" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 352 512" data-fa-i2svg="">
+                                                <path fill="currentColor"
+                                                    d="M176 80c-52.94 0-96 43.06-96 96 0 8.84 7.16 16 16 16s16-7.16 16-16c0-35.3 28.72-64 64-64 8.84 0 16-7.16 16-16s-7.16-16-16-16zM96.06 459.17c0 3.15.93 6.22 2.68 8.84l24.51 36.84c2.97 4.46 7.97 7.14 13.32 7.14h78.85c5.36 0 10.36-2.68 13.32-7.14l24.51-36.84c1.74-2.62 2.67-5.7 2.68-8.84l.05-43.18H96.02l.04 43.18zM176 0C73.72 0 0 82.97 0 176c0 44.37 16.45 84.85 43.56 115.78 16.64 18.99 42.74 58.8 52.42 92.16v.06h48v-.12c-.01-4.77-.72-9.51-2.15-14.07-5.59-17.81-22.82-64.77-62.17-109.67-20.54-23.43-31.52-53.15-31.61-84.14-.2-73.64 59.67-128 127.95-128 70.58 0 128 57.42 128 128 0 30.97-11.24 60.85-31.65 84.14-39.11 44.61-56.42 91.47-62.1 109.46a47.507 47.507 0 0 0-2.22 14.3v.1h48v-.05c9.68-33.37 35.78-73.18 52.42-92.16C335.55 260.85 352 220.37 352 176 352 78.8 273.2 0 176 0z">
+                                                </path>
+                                            </svg><!-- <i class="far fa-lightbulb" style="color: #ff90ff"></i> -->
+                                            <span style="color: rgb(255, 144, 255);">
+                                                Hồng
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="col-2" data-image="red.jpg">
+                                        <p class="btn-action js-click-color  red" data-cname="Đỏ" data-color="#red"
+                                            data-name="red" data-value="#ed6565">
+                                            <svg class="svg-inline--fa fa-lightbulb fa-w-11" style="color: #ed6565;"
+                                                aria-hidden="true" focusable="false" data-prefix="far"
+                                                data-icon="lightbulb" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 352 512" data-fa-i2svg="">
+                                                <path fill="currentColor"
+                                                    d="M176 80c-52.94 0-96 43.06-96 96 0 8.84 7.16 16 16 16s16-7.16 16-16c0-35.3 28.72-64 64-64 8.84 0 16-7.16 16-16s-7.16-16-16-16zM96.06 459.17c0 3.15.93 6.22 2.68 8.84l24.51 36.84c2.97 4.46 7.97 7.14 13.32 7.14h78.85c5.36 0 10.36-2.68 13.32-7.14l24.51-36.84c1.74-2.62 2.67-5.7 2.68-8.84l.05-43.18H96.02l.04 43.18zM176 0C73.72 0 0 82.97 0 176c0 44.37 16.45 84.85 43.56 115.78 16.64 18.99 42.74 58.8 52.42 92.16v.06h48v-.12c-.01-4.77-.72-9.51-2.15-14.07-5.59-17.81-22.82-64.77-62.17-109.67-20.54-23.43-31.52-53.15-31.61-84.14-.2-73.64 59.67-128 127.95-128 70.58 0 128 57.42 128 128 0 30.97-11.24 60.85-31.65 84.14-39.11 44.61-56.42 91.47-62.1 109.46a47.507 47.507 0 0 0-2.22 14.3v.1h48v-.05c9.68-33.37 35.78-73.18 52.42-92.16C335.55 260.85 352 220.37 352 176 352 78.8 273.2 0 176 0z">
+                                                </path>
+                                            </svg><!-- <i class="far fa-lightbulb" style="color: #ed6565"></i> -->
+                                            <span>
+                                                Đỏ
+                                            </span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <!--  -->
+                                <div class="image-by-color">
+                                    <p>(Sau đây là hình ảnh mô tả màu sắc của sản phẩm) </p>
+                                    <img src="./assets/images/color-image/deep-blue.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="setting-footer">
+                            <div class="form-group">
+                                <label class="label-ranger">Chọn kích cỡ font: <span
+                                        class="js-font-size">70px*</span></label>
+                                <input type="range" min="20" max="160" step="1" type="range" value="70"
+                                    class="form-control-range" id="inputRangeSize">
+                            </div>
+                            <p class="label-note">* Kích thước minh họa trên ảnh</p>
+                            <p class="label-note">*Chiều dài sẽ phụ thuộc vào font chữ và văn bản khách hàng lựa
+                                chọn.Hãy liên hệ
+                                Hotline/Zalo 090 575 88 44 để được tư vấn chi tiết. Cảm ơn</p>
+                            <a href="https://zalo.me/0905758844" class="btn btn-primary btn-tab-footer btn-zalo">NHẮN
+                                ZALO SHOP</a>
+                            <a href="tel:0905758844" class="btn btn-primary btn-tab-footer btn-call">Call 0905758844</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+
+</body>
+
+</html>

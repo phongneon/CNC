@@ -20,6 +20,12 @@ body {
     }
 }
 
+.title-page {
+    font-weight: 900;
+    font-size: 50px;
+    color: #DC0000;
+}
+
 /* LEFT CONTENT */
 
 .show-result {
@@ -87,6 +93,7 @@ body {
 
 .text-show .child {
     position: relative;
+    height: 60px;
 }
 
 .text-show .show-color {
@@ -353,6 +360,16 @@ body {
 
 /* END RIGHT CONTENT */
 
+
+
+/* PRODUCT BANNER */
+.item-product img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* END PRODUCT BANNER */
 
 /* CLAS GLOBAL */
 

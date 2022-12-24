@@ -41,10 +41,6 @@ $(document).ready(function () {
         }
     });
 
-    // $('#text-area').bind('input propertychange', function() {
-    //     textShow.html($(this).val().replace(/\r\n|\r|\n/g,"<br />"));
-    // });
-
     $('.btn-approved').on('click', function () {
         var val = $('#text-area').val().replace(/\n/g," ");
         var reg = /\n/g; // Check Text Key Enter
@@ -128,11 +124,73 @@ $(document).ready(function () {
 
     });
 
+    $.each(imageProductAds, function(i,img){
+        console.log(img);
+        $('.product-brand-wrapper').append(
+            `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <a href="./assets/images/p-related/${img}" class="item-product">
+                    <img src="./assets/images/p-related/${img}" alt="" class="img-fluid"/>
+                </a>
+            </div>`
+        );
+    });
+
+    $('.item-product').magnificPopup({
+        type:'image',
+        closeBtnInside:true,
+        gallery: {
+                enabled: true,
+                navigateByImgClick: true
+        }
+    });
+
+    // imageProductAds.forEach(function(item,index){
+    //     $('.product-ads-wrapper').append(
+    //         `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+    //             <div class="item-product">
+    //                 <img src="./assets/images/p-related/${item}" alt="" class="img-fluid"/>
+    //             </div>
+    //         </div>`
+    //     );
+    // })
 });
 
 function changeFontSize(element, sizeValue) {
     element.css('font-size', sizeValue + 'px');
 }
+
+const imageProductAds = [ 
+    "ads-1.jpg",
+    "ads-2.jpg",
+    "ads-3.jpg",
+    "ads-4.jpg",
+    "ads-5.jpg",
+    "ads-6.jpg",
+    "ads-7.jpg",
+    "ads-8.jpg",
+    "ads-9.jpg",
+    "ads-10.jpg",
+    "ads-11.jpg",
+    "ads-12.jpg",
+    "ads-13.jpg",
+    "ads-14.jpg",
+    "ads-15.jpg",
+    "ads-16.jpg",
+    "ads-17.jpg",
+    "ads-18.jpg",
+    "ads-19.jpg",
+    "ads-20.jpg",
+    "ads-21.jpg",
+    "ads-22.jpg",
+    "ads-23.jpg",
+    "ads-24.jpg",
+    "ads-25.jpg",
+    "ads-26.jpg",
+    "ads-27.jpg",
+    "ads-28.jpg",
+    "ads-29.jpg",
+    "ads-30.jpg"
+];
 
 // function get_random () {
 //     var arr = [];
